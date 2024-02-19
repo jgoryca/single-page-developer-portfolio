@@ -2,12 +2,8 @@
 
 @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 
-@import "vendors/normalize";
-
 @import "base/base", "base/fonts", "base/typography", "base/helpers";
 
-@import "layout/header", "layout/footer";
+@import "layout/header", "layout/footer", "layout/skills", "layout/projects";
 
-@import "components/button";
-
-@import "themes/default";
+@import "components/button", "components/patterns", "components/icons";

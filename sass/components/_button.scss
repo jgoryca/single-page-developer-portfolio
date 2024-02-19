@@ -1,3 +1,43 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+.btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 2.29px;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid $color-green;
+  cursor: pointer;
+
+  &--1 {
+    margin-top: 56.7rem;
+  }
+
+  &--2 {
+    margin-top: 2.5rem;
+    margin-bottom: 10.5rem;
+    align-self: end;
+  }
+
+  &--form {
+    color: $color-white;
+    display: inline-block;
+    margin-top: 3.2rem;
+
+    &:hover,
+    &:active {
+      color: $color-green;
+    }
+  }
+}
+
+a {
+  &:link,
+  &:visited {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-green;
+  }
+}

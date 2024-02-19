@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -9,4 +10,19 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+body {
+  background-color: $color-black;
+  color: $color-white;
+  // padding: 0 16.5rem;
+  position: relative;
+}
+
+main {
+  margin: 0 16.5rem;
+}
+
+.hidden {
+  display: none;
 }
