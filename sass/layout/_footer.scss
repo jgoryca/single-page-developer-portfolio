@@ -46,9 +46,9 @@ form {
         border-bottom: 1px solid $color-green;
       }
 
-      // &:invalid {
-      //   border-bottom: 1px solid red;
-      // }
+      &:invalid {
+        border-bottom: 1px solid $color-light-grey;
+      }
     }
   }
 }

@@ -142,6 +142,9 @@ form {
       form div input:valid,
       form div textarea:valid {
         border-bottom: 1px solid #4ee1a0; }
+      form div input:invalid,
+      form div textarea:invalid {
+        border-bottom: 1px solid #d9d9d9; }
 
 .error-message {
   position: absolute;
@@ -177,8 +180,8 @@ form {
   margin-bottom: 1.4rem; }
 
 .section-projects {
-  margin-top: 14rem;
-  margin-bottom: 15rem;
+  padding-top: 14rem;
+  padding-bottom: 15rem;
   max-width: 100%; }
 
 .projects-heading {
@@ -186,7 +189,7 @@ form {
   justify-content: space-between; }
 
 .projects-container {
-  min-height: 160rem;
+  height: 160rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem; }

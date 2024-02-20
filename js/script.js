@@ -21,36 +21,36 @@ const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
 
-const check = function (element) {
+const notValid = function (element) {
+  element.style.borderBottom = "1px solid #FF6F5B";
+  element.nextElementSibling.classList.remove("hidden");
+  const first = element.nextElementSibling;
+  first.nextElementSibling.classList.remove("hidden");
+  element.addEventListener("click", function () {
+    element.style.borderBottom = "1px solid #d9d9d9";
+    element.nextElementSibling.classList.add("hidden");
+    first.nextElementSibling.classList.add("hidden");
+  });
+};
+
+const valid = function (element) {
+  element.style.borderBottom = "1px solid #4ee1a0";
+};
+
+const checkText = function (element) {
   if (!element.value) {
-    element.style.borderBottom = "1px solid #FF6F5B";
-    element.nextElementSibling.classList.remove("hidden");
-    const first = element.nextElementSibling;
-    first.nextElementSibling.classList.remove("hidden");
-    element.addEventListener("click", function () {
-      element.style.borderBottom = "1px solid #d9d9d9";
-      element.nextElementSibling.classList.add("hidden");
-      first.nextElementSibling.classList.add("hidden");
-    });
-  } else element.style.borderBottom = "1px solid #4ee1a0";
+    notValid(element);
+  } else valid(element);
 };
 
 const checkEmail = function (element) {
   if (!element.value.match(/\w+@\w+/)) {
-    element.style.borderBottom = "1px solid #FF6F5B";
-    element.nextElementSibling.classList.remove("hidden");
-    const first = element.nextElementSibling;
-    first.nextElementSibling.classList.remove("hidden");
-    element.addEventListener("click", function () {
-      element.style.borderBottom = "1px solid #d9d9d9";
-      element.nextElementSibling.classList.add("hidden");
-      first.nextElementSibling.classList.add("hidden");
-    });
-  } else element.style.borderBottom = "1px solid #4ee1a0";
+    notValid(element);
+  } else valid(element);
 };
 
 btnForm.addEventListener("click", function () {
-  check(nameInput);
+  checkText(nameInput);
   checkEmail(emailInput);
-  check(messageInput);
+  checkText(messageInput);
 });
