@@ -97,7 +97,19 @@
       </div>
       <div class="header-col--1"></div>
       <div class="header-col--2">
-        <img src="images/image-profile-desktop.webp" class="profile-img" />
+        <picture>
+          <source
+            srcset="images/image-profile-mobile.webp"
+            media="(max-width: 670px)"
+            class="profile-img"
+          />
+          <source
+            srcset="images/image-profile-tablet.webp"
+            media="(max-width: 890px)"
+            class="profile-img"
+          />
+          <img src="images/image-profile-desktop.webp" class="profile-img" />
+        </picture>
         <img src="images/pattern-circle.svg" alt="Circle" id="circle" />
       </div>
     </header>
@@ -138,13 +150,19 @@
         </div>
         <div class="projects-container">
           <div class="projects-item-img projects-item-img--1">
-            <img
-              src="images/thumbnail-project-1-large.webp"
-              alt="Design portfolio"
-              class="projects-img"
-            />
+            <picture>
+              <source
+                srcset="images/thumbnail-project-1-small.webp"
+                media="(max-width: 890px)"
+              />
+              <img
+                src="images/thumbnail-project-1-large.webp"
+                alt="Design portfolio"
+                class="projects-img"
+              />
+            </picture>
 
-            <div class="projects-btn-box projects-btn-box--1">
+            <div class="projects-btn-box">
               <button class="btn btn-project hidden" type="button">
                 <a href="#"> View project </a>
               </button>
@@ -159,15 +177,29 @@
               <span>HTML</span>
               <span>CSS</span>
             </div>
+            <div class="projects-btn-box-small">
+              <button class="btn btn-project" type="button">
+                <a href="#"> View project </a>
+              </button>
+              <button class="btn btn-code" type="button">
+                <a href="#"> View code </a>
+              </button>
+            </div>
           </div>
           <div class="projects-item-img projects-item-img--2">
-            <img
-              src="images/thumbnail-project-2-large.webp"
-              alt="E-learning landing page"
-              class="projects-img"
-            />
+            <picture>
+              <source
+                srcset="images/thumbnail-project-2-small.webp"
+                media="(max-width: 890px)"
+              />
+              <img
+                src="images/thumbnail-project-2-large.webp"
+                alt="E-learning landing page"
+                class="projects-img"
+              />
+            </picture>
 
-            <div class="projects-btn-box projects-btn-box--2">
+            <div class="projects-btn-box">
               <button class="btn btn-project hidden" type="button">
                 <a href="#"> View project </a>
               </button>
@@ -181,16 +213,30 @@
             <div class="projects-skills">
               <span>HTML</span> <span>CSS</span>
             </div>
+            <div class="projects-btn-box-small">
+              <button class="btn btn-project" type="button">
+                <a href="#"> View project </a>
+              </button>
+              <button class="btn btn-code" type="button">
+                <a href="#"> View code </a>
+              </button>
+            </div>
           </div>
 
           <div class="projects-item-img projects-item-img--3">
-            <img
-              src="images/thumbnail-project-3-large.webp"
-              alt="Todo web app"
-              class="projects-img"
-            />
+            <picture>
+              <source
+                srcset="images/thumbnail-project-3-small.webp"
+                media="(max-width: 890px)"
+              />
+              <img
+                src="images/thumbnail-project-3-large.webp"
+                alt="Todo web app"
+                class="projects-img"
+              />
+            </picture>
 
-            <div class="projects-btn-box projects-btn-box--3">
+            <div class="projects-btn-box">
               <button class="btn btn-project hidden" type="button">
                 <a href="#"> View project </a>
               </button>
@@ -204,16 +250,30 @@
             <div class="projects-skills">
               <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
             </div>
+            <div class="projects-btn-box-small">
+              <button class="btn btn-project" type="button">
+                <a href="#"> View project </a>
+              </button>
+              <button class="btn btn-code" type="button">
+                <a href="#"> View code </a>
+              </button>
+            </div>
           </div>
 
           <div class="projects-item-img projects-item-img--4">
-            <img
-              src="images/thumbnail-project-4-large.webp"
-              alt="Entertainment web app"
-              class="projects-img"
-            />
+            <picture>
+              <source
+                srcset="images/thumbnail-project-4-small.webp"
+                media="(max-width: 890px)"
+              />
+              <img
+                src="images/thumbnail-project-4-large.webp"
+                alt="Entertainment web app"
+                class="projects-img"
+              />
+            </picture>
 
-            <div class="projects-btn-box projects-btn-box--4">
+            <div class="projects-btn-box">
               <button class="btn btn-project hidden" type="button">
                 <a href="#"> View project </a>
               </button>
@@ -227,15 +287,29 @@
             <div class="projects-skills">
               <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
             </div>
+            <div class="projects-btn-box-small">
+              <button class="btn btn-project" type="button">
+                <a href="#"> View project </a>
+              </button>
+              <button class="btn btn-code" type="button">
+                <a href="#"> View code </a>
+              </button>
+            </div>
           </div>
           <div class="projects-item-img projects-item-img--5">
-            <img
-              src="images/thumbnail-project-5-large.webp"
-              alt="Memory Game"
-              class="projects-img"
-            />
+            <picture>
+              <source
+                srcset="images/thumbnail-project-5-small.webp"
+                media="(max-width: 890px)"
+              />
+              <img
+                src="images/thumbnail-project-5-large.webp"
+                alt="Memory Game"
+                class="projects-img"
+              />
+            </picture>
 
-            <div class="projects-btn-box projects-btn-box--5">
+            <div class="projects-btn-box">
               <button class="btn btn-project hidden" type="button">
                 <a href="#"> View project </a>
               </button>
@@ -251,15 +325,29 @@
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
+            <div class="projects-btn-box-small">
+              <button class="btn btn-project" type="button">
+                <a href="#"> View project </a>
+              </button>
+              <button class="btn btn-code" type="button">
+                <a href="#"> View code </a>
+              </button>
+            </div>
           </div>
           <div class="projects-item-img projects-item-img--6">
-            <img
-              src="images/thumbnail-project-6-large.webp"
-              alt="Art gallery showcase"
-              class="projects-img"
-            />
+            <picture>
+              <source
+                srcset="images/thumbnail-project-6-small.webp"
+                media="(max-width: 890px)"
+              />
+              <img
+                src="images/thumbnail-project-6-large.webp"
+                alt="Art gallery showcase"
+                class="projects-img"
+              />
+            </picture>
 
-            <div class="projects-btn-box projects-btn-box--6">
+            <div class="projects-btn-box">
               <button class="btn btn-project hidden" type="button">
                 <a href="#"> View project </a>
               </button>
@@ -274,6 +362,14 @@
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
+            </div>
+            <div class="projects-btn-box-small">
+              <button class="btn btn-project" type="button">
+                <a href="#"> View project </a>
+              </button>
+              <button class="btn btn-code" type="button">
+                <a href="#"> View code </a>
+              </button>
             </div>
           </div>
         </div>

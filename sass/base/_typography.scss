@@ -19,6 +19,7 @@ body {
   @include breakpoint($medium) {
     line-height: 7.2rem;
     font-size: 7.2rem;
+    letter-spacing: -2.05px;
   }
 }
 

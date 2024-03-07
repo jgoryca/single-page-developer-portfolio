@@ -2,22 +2,42 @@
   position: absolute;
   top: 13.3rem;
   left: -10rem;
+
+  @include breakpoint($medium) {
+    top: 8.6rem;
+    left: -26.5rem;
+  }
 }
 
 #rings--2 {
   position: absolute;
   top: 25.3rem;
   right: -40.4rem;
+
+  @include breakpoint($medium) {
+    top: 38.7rem;
+    right: -40.4rem;
+  }
 }
 
 #rings--3 {
   position: absolute;
   bottom: 21.9rem;
   left: -20.5rem;
+
+  @include breakpoint($medium) {
+    bottom: 15rem;
+    left: -36.8rem;
+  }
 }
 
 #circle {
   position: absolute;
   bottom: 7rem;
   left: -6.45rem;
+
+  @include breakpoint($medium) {
+    bottom: 0;
+    left: 25.64rem;
+  }
 }
