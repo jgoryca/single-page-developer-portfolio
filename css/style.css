@@ -19,6 +19,12 @@ body {
 main {
   padding: 0 16.5rem;
   overflow: hidden; }
+  @media screen and (max-width: 1280px) {
+    main {
+      padding: 0 8rem; } }
+  @media screen and (max-width: 890px) {
+    main {
+      padding: 0 3.2rem; } }
 
 .hidden {
   display: none; }
@@ -34,23 +40,45 @@ body {
   font-weight: bold;
   line-height: 8.8rem;
   letter-spacing: -2.5px; }
+  @media screen and (max-width: 1280px) {
+    .heading-xl {
+      font-size: 6.4rem;
+      line-height: 6.4rem; } }
+  @media screen and (max-width: 890px) {
+    .heading-xl {
+      line-height: 7.2rem;
+      font-size: 7.2rem; } }
 
 .heading-l {
   font-size: 4.8rem;
   font-weight: bold;
   line-height: 5.6rem;
   letter-spacing: -1.5px; }
+  @media screen and (max-width: 1280px) {
+    .heading-l {
+      font-size: 4rem; } }
 
 .heading-m {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 3.2rem; }
+  @media screen and (max-width: 1280px) {
+    .heading-m {
+      font-size: 2rem; } }
 
 .logo {
   font-size: 3.2rem; }
 
 p {
-  color: #d9d9d9; }
+  color: #d9d9d9;
+  font-size: 1.8rem;
+  line-height: 2.8rem; }
+  @media screen and (max-width: 1280px) {
+    p {
+      font-size: 1.6rem; } }
+  @media screen and (max-width: 1280px) {
+    p {
+      font-size: 1.7rem; } }
 
 .error-message {
   font-size: 1.4rem;
@@ -62,6 +90,12 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 60% 40%; }
+  @media screen and (max-width: 1280px) {
+    header {
+      margin: 0 8rem; } }
+  @media screen and (max-width: 890px) {
+    header {
+      margin: 0; } }
 
 .header-col--2 {
   position: relative; }
@@ -70,6 +104,9 @@ header {
   position: absolute;
   top: 3.9rem;
   left: 0; }
+  @media screen and (max-width: 890px) {
+    .logo-top {
+      left: 3.2rem; } }
 
 .social-media-top {
   position: absolute;
@@ -87,36 +124,51 @@ header {
   position: absolute;
   top: 19.8rem;
   left: 0;
-  max-width: 70.6rem;
+  width: 64%;
   z-index: 999; }
+  @media screen and (max-width: 1280px) {
+    .about {
+      top: 15rem; } }
+  @media screen and (max-width: 890px) {
+    .about {
+      left: 3.2rem; } }
   .about p {
-    display: inline-block;
+    display: block;
     width: 44.5rem;
     margin-top: 3.7rem; }
 
 .name {
   border-bottom: 6px solid #4ee1a0; }
 
-.contact-btn {
-  text-transform: uppercase;
-  background-color: #151515;
-  border: none;
-  text-decoration: none;
-  letter-spacing: 2.29px; }
-  .contact-btn--1 {
-    margin-top: 56.7rem; }
-
 footer {
   background-color: #242424;
   padding: 8.4rem 16.5rem 9.2rem 16.5rem; }
+  @media screen and (max-width: 1280px) {
+    footer {
+      padding: 8.4rem 8rem 9.2rem 8rem; } }
+  @media screen and (max-width: 890px) {
+    footer {
+      padding: 8.4rem 3.2rem 9.2rem 3.2rem; } }
 
 .contact-box {
   display: flex;
   justify-content: space-between;
   padding-bottom: 9.2rem;
   border-bottom: 1px solid #d9d9d9; }
+  @media screen and (max-width: 890px) {
+    .contact-box {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
   .contact-box-info {
     width: 40%; }
+    @media screen and (max-width: 1280px) {
+      .contact-box-info {
+        width: 45%; } }
+    @media screen and (max-width: 890px) {
+      .contact-box-info {
+        width: 58%;
+        margin-bottom: 4.8rem; } }
   .contact-box-heading {
     margin-bottom: 3.6rem; }
 
@@ -126,6 +178,12 @@ form {
   flex-direction: column;
   align-items: flex-end;
   gap: 3.2rem; }
+  @media screen and (max-width: 1280px) {
+    form {
+      width: 45%; } }
+  @media screen and (max-width: 890px) {
+    form {
+      width: 58%; } }
   form div {
     width: 100%;
     position: relative; }
@@ -174,8 +232,12 @@ form {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
   margin-top: 10.4rem;
   border-top: 1px solid #d9d9d9; }
+  @media screen and (max-width: 890px) {
+    .section-skills {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .heading-skills {
   margin-top: 6.5rem;
@@ -203,7 +265,8 @@ form {
 .projects-item-text {
   display: flex;
   flex-direction: column;
-  gap: 2rem; }
+  gap: 2rem;
+  margin-bottom: 3.9rem; }
   .projects-item-text--1 {
     grid-row-start: 2; }
   .projects-item-text--2 {
@@ -237,6 +300,9 @@ form {
   display: inline-block;
   margin-right: 2rem;
   text-transform: uppercase; }
+  @media screen and (max-width: 1280px) {
+    .projects-skills span {
+      font-size: 1.6rem; } }
 
 .btn {
   text-transform: uppercase;
@@ -247,15 +313,17 @@ form {
   border-bottom: 2px solid #4ee1a0;
   cursor: pointer; }
   .btn--1 {
-    margin-top: 56.7rem; }
+    margin-top: 6.6rem; }
+    @media screen and (max-width: 1280px) {
+      .btn--1 {
+        margin-top: 3rem; } }
   .btn--2 {
     margin-top: 2.5rem;
     margin-bottom: 10.5rem;
     align-self: end; }
   .btn--form {
     color: #ffffff;
-    display: inline-block;
-    margin-top: 3.2rem; }
+    display: inline-block; }
     .btn--form:hover, .btn--form:active {
       color: #4ee1a0; }
 

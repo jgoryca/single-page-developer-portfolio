@@ -10,6 +10,16 @@ body {
   font-weight: bold;
   line-height: 8.8rem;
   letter-spacing: -2.5px;
+
+  @include breakpoint($large) {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+
+  @include breakpoint($medium) {
+    line-height: 7.2rem;
+    font-size: 7.2rem;
+  }
 }
 
 .heading-l {
@@ -17,12 +27,20 @@ body {
   font-weight: bold;
   line-height: 5.6rem;
   letter-spacing: -1.5px;
+
+  @include breakpoint($large) {
+    font-size: 4rem;
+  }
 }
 
 .heading-m {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 3.2rem;
+
+  @include breakpoint($large) {
+    font-size: 2rem;
+  }
 }
 
 .logo {
@@ -31,6 +49,16 @@ body {
 
 p {
   color: $color-light-grey;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+
+  @include breakpoint($large) {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoint($large) {
+    font-size: 1.7rem;
+  }
 }
 
 .error-message {

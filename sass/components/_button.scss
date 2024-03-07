@@ -8,7 +8,11 @@
   cursor: pointer;
 
   &--1 {
-    margin-top: 56.7rem;
+    margin-top: 6.6rem;
+
+    @include breakpoint($large) {
+      margin-top: 3rem;
+    }
   }
 
   &--2 {
@@ -20,7 +24,6 @@
   &--form {
     color: $color-white;
     display: inline-block;
-    margin-top: 3.2rem;
 
     &:hover,
     &:active {

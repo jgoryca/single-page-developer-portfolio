@@ -3,6 +3,14 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 60% 40%;
+
+  @include breakpoint($large) {
+    margin: 0 8rem;
+  }
+
+  @include breakpoint($medium) {
+    margin: 0;
+  }
 }
 
 .header-col--2 {
@@ -13,6 +21,10 @@ header {
   position: absolute;
   top: 3.9rem;
   left: 0;
+
+  @include breakpoint($medium) {
+    left: 3.2rem;
+  }
 }
 
 .social-media-top {
@@ -33,11 +45,19 @@ header {
   position: absolute;
   top: 19.8rem;
   left: 0;
-  max-width: 70.6rem;
+  width: 64%;
   z-index: 999;
 
+  @include breakpoint($large) {
+    top: 15rem;
+  }
+
+  @include breakpoint($medium) {
+    left: 3.2rem;
+  }
+
   & p {
-    display: inline-block;
+    display: block;
     width: 44.5rem;
     margin-top: 3.7rem;
   }
@@ -47,15 +67,16 @@ header {
   border-bottom: 6px solid $color-green;
 }
 
-.contact-btn {
-  // display: inline-block;
-  text-transform: uppercase;
-  background-color: $color-black;
-  border: none;
-  text-decoration: none;
-  letter-spacing: 2.29px;
+// .contact-btn {
+//   // display: inline-block;
+//   text-transform: uppercase;
+//   background-color: $color-black;
+//   border: none;
+//   text-decoration: none;
+//   letter-spacing: 2.29px;
 
-  &--1 {
-    margin-top: 56.7rem;
-  }
-}
+//   &--1 {
+//     // margin-top: 56.7rem;
+//     margin-top: 6.6rem;
+//   }
+// }

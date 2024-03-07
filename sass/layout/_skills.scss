@@ -2,8 +2,13 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
   margin-top: 10.4rem;
   border-top: 1px solid $color-light-grey;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .heading-skills {
