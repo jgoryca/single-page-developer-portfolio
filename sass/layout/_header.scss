@@ -10,7 +10,7 @@ header {
 
   @include breakpoint($medium) {
     margin: 0;
-    grid-template-columns: 58% 42%;
+    // grid-template-columns: 58% 42%;
   }
 }
 
@@ -67,6 +67,12 @@ header {
 
     @include breakpoint($medium) {
       margin-top: 6rem;
+    }
+
+    @include breakpoint($small) {
+      font-size: 1.6rem;
+      margin-top: 4rem;
+      padding-right: 6rem;
     }
   }
 }

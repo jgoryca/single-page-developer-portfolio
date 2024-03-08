@@ -7,6 +7,12 @@
   border-bottom: 2px solid $color-green;
   cursor: pointer;
 
+  @include breakpoint($small) {
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    padding-bottom: 1rem;
+  }
+
   &--1 {
     margin-top: 6.6rem;
 

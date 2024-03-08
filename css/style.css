@@ -49,6 +49,11 @@ body {
       line-height: 7.2rem;
       font-size: 7.2rem;
       letter-spacing: -2.05px; } }
+  @media screen and (max-width: 690px) {
+    .heading-xl {
+      line-height: 5.8rem;
+      font-size: 5.8rem;
+      letter-spacing: -1.5px; } }
 
 .heading-l {
   font-size: 4.8rem;
@@ -58,6 +63,9 @@ body {
   @media screen and (max-width: 1280px) {
     .heading-l {
       font-size: 4rem; } }
+  @media screen and (max-width: 690px) {
+    .heading-l {
+      font-size: 3.2rem; } }
 
 .heading-m {
   font-size: 2.4rem;
@@ -66,6 +74,9 @@ body {
   @media screen and (max-width: 1280px) {
     .heading-m {
       font-size: 2rem; } }
+  @media screen and (max-width: 690px) {
+    .heading-m {
+      font-size: 1.8rem; } }
 
 .logo {
   font-size: 3.2rem; }
@@ -77,9 +88,6 @@ p {
   @media screen and (max-width: 1280px) {
     p {
       font-size: 1.6rem; } }
-  @media screen and (max-width: 1280px) {
-    p {
-      font-size: 1.7rem; } }
 
 .error-message {
   font-size: 1.4rem;
@@ -96,8 +104,7 @@ header {
       margin: 0 8rem; } }
   @media screen and (max-width: 890px) {
     header {
-      margin: 0;
-      grid-template-columns: 58% 42%; } }
+      margin: 0; } }
 
 .header-col--2 {
   position: relative;
@@ -144,6 +151,11 @@ header {
     @media screen and (max-width: 890px) {
       .about p {
         margin-top: 6rem; } }
+    @media screen and (max-width: 690px) {
+      .about p {
+        font-size: 1.6rem;
+        margin-top: 4rem;
+        padding-right: 6rem; } }
 
 .name {
   border-bottom: 6px solid #4ee1a0; }
@@ -326,6 +338,9 @@ form {
   @media screen and (max-width: 1280px) {
     .projects-skills span {
       font-size: 1.6rem; } }
+  @media screen and (max-width: 690px) {
+    .projects-skills span {
+      font-size: 1.4rem; } }
 
 .btn {
   text-transform: uppercase;
@@ -335,6 +350,11 @@ form {
   padding-bottom: 1.2rem;
   border-bottom: 2px solid #4ee1a0;
   cursor: pointer; }
+  @media screen and (max-width: 690px) {
+    .btn {
+      font-size: 1.2rem;
+      letter-spacing: 1.2px;
+      padding-bottom: 1rem; } }
   .btn--1 {
     margin-top: 6.6rem; }
     @media screen and (max-width: 1280px) {

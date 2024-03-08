@@ -21,6 +21,12 @@ body {
     font-size: 7.2rem;
     letter-spacing: -2.05px;
   }
+
+  @include breakpoint($small) {
+    line-height: 5.8rem;
+    font-size: 5.8rem;
+    letter-spacing: -1.5px;
+  }
 }
 
 .heading-l {
@@ -32,6 +38,10 @@ body {
   @include breakpoint($large) {
     font-size: 4rem;
   }
+
+  @include breakpoint($small) {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-m {
@@ -41,6 +51,10 @@ body {
 
   @include breakpoint($large) {
     font-size: 2rem;
+  }
+
+  @include breakpoint($small) {
+    font-size: 1.8rem;
   }
 }
 
@@ -57,9 +71,9 @@ p {
     font-size: 1.6rem;
   }
 
-  @include breakpoint($large) {
-    font-size: 1.7rem;
-  }
+  // @include breakpoint($large) {
+  //   font-size: 1.7rem;
+  // }
 }
 
 .error-message {
