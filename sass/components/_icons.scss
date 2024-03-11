@@ -1,4 +1,6 @@
-.social-media-icon:hover path,
-.social-media-icon:focus path {
-  fill: $color-green;
+.social-media-icon {
+  &:hover path,
+  &:focus path {
+    fill: $color-green;
+  }
 }

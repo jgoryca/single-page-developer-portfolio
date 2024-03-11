@@ -2,18 +2,29 @@
   margin-top: 14rem;
   margin-bottom: 15rem;
   max-width: 100%;
+
+  @include breakpoint($phone) {
+    margin-top: 8rem;
+  }
 }
 
 .projects {
   &-heading {
     display: flex;
     justify-content: space-between;
+    @include breakpoint($phone) {
+      margin-bottom: 4rem;
+    }
   }
 
   &-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+
+    @include breakpoint($phone) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-item-img {
@@ -30,28 +41,34 @@
     gap: 0.7rem;
     margin-bottom: 3.9rem;
 
-    &--1 {
-      grid-row-start: 2;
+    @include breakpointMin(561px) {
+      &--1 {
+        grid-row-start: 2;
+      }
+
+      &--2 {
+        grid-row-start: 2;
+      }
+
+      &--3 {
+        grid-row-start: 4;
+      }
+
+      &--4 {
+        grid-row-start: 4;
+      }
+
+      &--5 {
+        grid-row-start: 6;
+      }
+
+      &--6 {
+        grid-row-start: 6;
+      }
     }
 
-    &--2 {
-      grid-row-start: 2;
-    }
-
-    &--3 {
-      grid-row-start: 4;
-    }
-
-    &--4 {
-      grid-row-start: 4;
-    }
-
-    &--5 {
-      grid-row-start: 6;
-    }
-
-    &--6 {
-      grid-row-start: 6;
+    @include breakpoint($phone) {
+      margin-bottom: 0.8rem;
     }
   }
 
@@ -100,13 +117,5 @@
     display: inline-block;
     margin-right: 2rem;
     text-transform: uppercase;
-
-    @include breakpoint($large) {
-      font-size: 1.6rem;
-    }
-
-    @include breakpoint($small) {
-      font-size: 1.4rem;
-    }
   }
 }

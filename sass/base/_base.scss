@@ -30,6 +30,10 @@ main {
   @include breakpoint($medium) {
     padding: 0 3.2rem;
   }
+
+  @include breakpoint($small) {
+    padding: 0 1.6rem;
+  }
 }
 
 .hidden {

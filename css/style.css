@@ -25,6 +25,9 @@ main {
   @media screen and (max-width: 890px) {
     main {
       padding: 0 3.2rem; } }
+  @media screen and (max-width: 690px) {
+    main {
+      padding: 0 1.6rem; } }
 
 .hidden {
   display: none; }
@@ -32,7 +35,7 @@ main {
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.8rem;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 2.8rem; }
 
 .heading-xl {
@@ -54,6 +57,11 @@ body {
       line-height: 5.8rem;
       font-size: 5.8rem;
       letter-spacing: -1.5px; } }
+  @media screen and (max-width: 560px) {
+    .heading-xl {
+      line-height: 4rem;
+      font-size: 4rem;
+      letter-spacing: -1.14px; } }
 
 .heading-l {
   font-size: 4.8rem;
@@ -65,7 +73,14 @@ body {
       font-size: 4rem; } }
   @media screen and (max-width: 690px) {
     .heading-l {
-      font-size: 3.2rem; } }
+      font-size: 3.2rem;
+      line-height: 4rem;
+      letter-spacing: -1px; } }
+  @media screen and (max-width: 560px) {
+    .heading-l {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      letter-spacing: -1px; } }
 
 .heading-m {
   font-size: 2.4rem;
@@ -77,9 +92,15 @@ body {
   @media screen and (max-width: 690px) {
     .heading-m {
       font-size: 1.8rem; } }
+  @media screen and (max-width: 690px) {
+    .heading-m {
+      font-size: 2.6rem; } }
 
 .logo {
   font-size: 3.2rem; }
+  @media screen and (max-width: 560px) {
+    .logo {
+      font-size: 2.4rem; } }
 
 p {
   color: #d9d9d9;
@@ -91,8 +112,20 @@ p {
 
 .error-message {
   font-size: 1.4rem;
-  font-weight: medium;
+  font-weight: 500;
   color: #ff6f5b; }
+
+.projects-skills span {
+  font-weight: 300; }
+  @media screen and (max-width: 1280px) {
+    .projects-skills span {
+      font-size: 1.6rem; } }
+  @media screen and (max-width: 690px) {
+    .projects-skills span {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 560px) {
+    .projects-skills span {
+      font-size: 1.8rem; } }
 
 header {
   margin: 0 16.5rem;
@@ -104,19 +137,40 @@ header {
       margin: 0 8rem; } }
   @media screen and (max-width: 890px) {
     header {
+      grid-template-columns: 58% 42%;
       margin: 0; } }
+  @media screen and (max-width: 560px) {
+    header {
+      margin: 0 auto;
+      width: 100%;
+      grid-template-columns: 1fr;
+      overflow: hidden;
+      padding: 1.6rem; } }
 
 .header-col--2 {
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
+  @media screen and (max-width: 890px) {
+    .header-col--2 {
+      overflow: hidden; } }
+  @media screen and (max-width: 560px) {
+    .header-col--2 {
+      margin: 0 auto;
+      overflow: visible;
+      text-align: center; } }
 
 .logo-top {
   position: absolute;
   top: 3.9rem;
-  left: 0; }
+  left: 0;
+  z-index: 999; }
   @media screen and (max-width: 890px) {
     .logo-top {
       left: 3.2rem; } }
+  @media screen and (max-width: 560px) {
+    .logo-top {
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%); } }
 
 .social-media-top {
   position: absolute;
@@ -126,10 +180,23 @@ header {
   gap: 3.2rem;
   margin-right: 2.8rem;
   z-index: 999; }
+  @media screen and (max-width: 560px) {
+    .social-media-top {
+      top: 7.2rem;
+      margin-right: 0;
+      justify-content: space-around;
+      gap: 2rem;
+      left: 50%;
+      transform: translateX(-50%) scale(0.8); } }
 
 .profile-img {
   width: 100%;
   height: 100%; }
+  @media screen and (max-width: 560px) {
+    .profile-img {
+      position: relative;
+      max-width: 46%;
+      height: auto; } }
 
 .about {
   position: absolute;
@@ -143,6 +210,14 @@ header {
   @media screen and (max-width: 890px) {
     .about {
       left: 3.2rem; } }
+  @media screen and (max-width: 560px) {
+    .about {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      margin: 4rem 0; } }
   .about p {
     display: block;
     width: 44.5rem;
@@ -150,12 +225,19 @@ header {
     padding-right: 2rem; }
     @media screen and (max-width: 890px) {
       .about p {
-        margin-top: 6rem; } }
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+        padding-right: 6rem; } }
     @media screen and (max-width: 690px) {
       .about p {
         font-size: 1.6rem;
         margin-top: 4rem;
         padding-right: 6rem; } }
+    @media screen and (max-width: 560px) {
+      .about p {
+        width: 100%;
+        padding-right: 0;
+        margin: 4rem 0; } }
 
 .name {
   border-bottom: 6px solid #4ee1a0; }
@@ -169,6 +251,9 @@ footer {
   @media screen and (max-width: 890px) {
     footer {
       padding: 6rem 3.2rem 4rem 3.2rem; } }
+  @media screen and (max-width: 560px) {
+    footer {
+      padding: 6rem 1.6rem 4rem 1.6rem; } }
 
 .contact-box {
   display: flex;
@@ -189,6 +274,9 @@ footer {
       .contact-box-info {
         width: 58%;
         margin-bottom: 4.8rem; } }
+    @media screen and (max-width: 560px) {
+      .contact-box-info {
+        width: 100%; } }
   .contact-box-heading {
     margin-bottom: 3.6rem; }
 
@@ -204,11 +292,15 @@ form {
   @media screen and (max-width: 890px) {
     form {
       width: 58%; } }
+  @media screen and (max-width: 560px) {
+    form {
+      width: 100%; } }
   form div {
     width: 100%;
     position: relative; }
     form div input,
     form div textarea {
+      font-family: inherit;
       width: 100%;
       background-color: #242424;
       color: #ffffff;
@@ -243,6 +335,11 @@ form {
   margin-top: 4.7rem;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 560px) {
+    .footer-bar {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center; } }
 
 .social-media-bottom {
   display: flex;
@@ -258,24 +355,46 @@ form {
   @media screen and (max-width: 890px) {
     .section-skills {
       grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 560px) {
+    .section-skills {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 1.6rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #d9d9d9; } }
 
 .heading-skills {
   margin-top: 6.5rem;
   margin-bottom: 1.4rem; }
+  @media screen and (max-width: 560px) {
+    .heading-skills {
+      margin-top: 2.3rem;
+      margin-bottom: 0; } }
 
 .section-projects {
   margin-top: 14rem;
   margin-bottom: 15rem;
   max-width: 100%; }
+  @media screen and (max-width: 560px) {
+    .section-projects {
+      margin-top: 8rem; } }
 
 .projects-heading {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 560px) {
+    .projects-heading {
+      margin-bottom: 4rem; } }
 
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem; }
+  @media screen and (max-width: 560px) {
+    .projects-container {
+      grid-template-columns: 1fr; } }
 
 .projects-item-img {
   position: relative; }
@@ -287,18 +406,22 @@ form {
   flex-direction: column;
   gap: 0.7rem;
   margin-bottom: 3.9rem; }
-  .projects-item-text--1 {
-    grid-row-start: 2; }
-  .projects-item-text--2 {
-    grid-row-start: 2; }
-  .projects-item-text--3 {
-    grid-row-start: 4; }
-  .projects-item-text--4 {
-    grid-row-start: 4; }
-  .projects-item-text--5 {
-    grid-row-start: 6; }
-  .projects-item-text--6 {
-    grid-row-start: 6; }
+  @media screen and (min-width: 561px) {
+    .projects-item-text--1 {
+      grid-row-start: 2; }
+    .projects-item-text--2 {
+      grid-row-start: 2; }
+    .projects-item-text--3 {
+      grid-row-start: 4; }
+    .projects-item-text--4 {
+      grid-row-start: 4; }
+    .projects-item-text--5 {
+      grid-row-start: 6; }
+    .projects-item-text--6 {
+      grid-row-start: 6; } }
+  @media screen and (max-width: 560px) {
+    .projects-item-text {
+      margin-bottom: 0.8rem; } }
 
 .projects-btn-box {
   width: 100%;
@@ -335,12 +458,6 @@ form {
   display: inline-block;
   margin-right: 2rem;
   text-transform: uppercase; }
-  @media screen and (max-width: 1280px) {
-    .projects-skills span {
-      font-size: 1.6rem; } }
-  @media screen and (max-width: 690px) {
-    .projects-skills span {
-      font-size: 1.4rem; } }
 
 .btn {
   text-transform: uppercase;
@@ -355,6 +472,11 @@ form {
       font-size: 1.2rem;
       letter-spacing: 1.2px;
       padding-bottom: 1rem; } }
+  @media screen and (max-width: 560px) {
+    .btn {
+      font-size: 1.6rem;
+      letter-spacing: 2.29px;
+      line-height: 2.6rem; } }
   .btn--1 {
     margin-top: 6.6rem; }
     @media screen and (max-width: 1280px) {
@@ -364,6 +486,9 @@ form {
     margin-top: 2.5rem;
     margin-bottom: 10.5rem;
     align-self: end; }
+    @media screen and (max-width: 560px) {
+      .btn--2 {
+        margin: 0; } }
   .btn--form {
     color: #ffffff;
     display: inline-block; }
@@ -385,6 +510,10 @@ a:hover, a:active {
     #rings--1 {
       top: 8.6rem;
       left: -26.5rem; } }
+  @media screen and (max-width: 560px) {
+    #rings--1 {
+      top: 12.4rem;
+      left: -34.2rem; } }
 
 #rings--2 {
   position: absolute;
@@ -394,6 +523,10 @@ a:hover, a:active {
     #rings--2 {
       top: 38.7rem;
       right: -40.4rem; } }
+  @media screen and (max-width: 560px) {
+    #rings--2 {
+      top: 54rem;
+      right: -34.4rem; } }
 
 #rings--3 {
   position: absolute;
@@ -402,6 +535,10 @@ a:hover, a:active {
   @media screen and (max-width: 890px) {
     #rings--3 {
       bottom: 15rem;
+      left: -36.8rem; } }
+  @media screen and (max-width: 560px) {
+    #rings--3 {
+      bottom: 26.9rem;
       left: -36.8rem; } }
 
 #circle {
@@ -412,6 +549,11 @@ a:hover, a:active {
     #circle {
       bottom: 0;
       left: 25.64rem; } }
+  @media screen and (max-width: 560px) {
+    #circle {
+      bottom: 0;
+      left: 30rem;
+      z-index: 9999; } }
 
 .social-media-icon:hover path,
 .social-media-icon:focus path {

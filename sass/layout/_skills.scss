@@ -9,9 +9,24 @@
   @include breakpoint($medium) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @include breakpoint($phone) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $color-light-grey;
+  }
 }
 
 .heading-skills {
   margin-top: 6.5rem;
   margin-bottom: 1.4rem;
+
+  @include breakpoint($phone) {
+    margin-top: 2.3rem;
+    margin-bottom: 0;
+  }
 }
